@@ -11,7 +11,7 @@ Project 3: Sign-up Page
 Description: Briefly describe what this project is about.
 Technologies Used: HTML, CSS, JavaScript
 
-Project 3: Landing Page
+Project 4: Landing Page
 Description: Briefly describe what this project is about.
 Technologies Used: HTML, CSS, JavaScript
 
