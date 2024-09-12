@@ -1,139 +1,82 @@
-<html>
- <head>
-  <title>
-   HarvestHub Services
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
-  <link
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvesthub Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
       rel="stylesheet"
     />
- </head>
- <body>
-  <header class="header">
-   <img alt="HarvestHub Logo" height="50" src="Harvesthub.jpg" width="100"/>
-   <ul class="nav">
-    <li>
-     <a href="#">
-      Home
-     </a>
-    </li>
-    <li>
-     <a class="active" href="#">
-      Services
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Contact Us
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      About Us
-     </a>
-    </li>
-   </ul>
-  </header>
-  <section class="services">
-   <div class="service">
-    <img alt="Farmer in a field" height="200" src="farmer1.jpeg" width="300"/>
-    <h3>
-     Crop Disease Prediction Model
-    </h3>
-    <p>
-     Empowering farmers and agricultural professionals by detecting diseases in crops through our cutting edge analysis technology
-    </p>
-    <button>
-     Detect
-    </button>
-   </div>
-   <div class="service">
-    <img alt="Green leaf with water droplets" height="200" src="Agriculture images.jpeg" width="300"/>
-    <h3>
-     Recommendations from ChatBot
-    </h3>
-    <p>
-     Seasoned Farmers or gardening newbies! Here's your go-to expert for all things crop. Let's chat and cultivate together.
-    </p>
-    <button>
-     Chat
-    </button>
-   </div>
-   <div class="service">
-    <img alt="Green crops in a field" height="200" src="praying to god.jpeg" width="300"/>
-    <h3>
-     Text-to-Voice Functionality
-    </h3>
-    <p>
-     Get instant, accurate diagnoses and tailored advice, all delivered in a clear, easy-to-understand voice.
-    </p>
-    <button>
-     Listen
-    </button>
-   </div>
-  </section>
-  <footer class="footer">
-   <img alt="HarvestHub Logo" height="50" src="Harvesthub.jpg" width="100"/>
-   <ul class="nav">
-    <li>
-     <a href="#">
-      Pricing
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      About us
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Features
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Help Center
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Contact us
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      FAQs
-     </a>
-    </li>
-    <li>
-     <a href="#">
-      Careers
-     </a>
-    </li>
-   </ul>
-   <div class="social">
-    <a href="https://x.com/Pragyanshukas">
-     <i class="fab fa-twitter">
-     </i>
-    </a>
-    <a href="https://www.facebook.com/pragyanshu.kashyap.9/">
-     <i class="fab fa-facebook-f">
-     </i>
-    </a>
-    <a href="https://www.linkedin.com/in/pragyanshu-kashyap/">
-     <i class="fab fa-linkedin-in">
-     </i>
-    </a>
-    <a href="https://www.instagram.com/pragyanshu_kashyap/"
-          ><i class="ri-instagram-fill"></i
-        ></a>
-   </div>
-   <p>
-    © 2024 Brand, Inc. • Privacy • Terms • Sitemap
-   </p>
-  </footer>
- </body>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="login video2.mp4" type="video/mp4">
+        </video>
+        <div class="left-side">
+            <div id="nhihorha">
+                <a href="#" class="logo"><h1>Harvest Hub</h1></a>
+            </div>
+            <div class="welcome-text">
+                <h1>Welcomes you to Harvest Hub</h1>
+                <p>Sign Up to continue access, if you are new here..</p>
+            </div>
+            <div class="website-address">
+                <p>www.harvesthub.com</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="language">
+                <select>
+                  <option value="en">English</option>
+                  <option value="en">Hindi</option>
+                </select>
+            </div>
+            <h2>Sign Up with</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Enter your Email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+
+                <div class="form-group">
+                    <label for="Confirm password">Confirm Password:</label>
+                    <input type="email" id="Confirm password" name="Confirm password" placeholder="Enter your Email Account">
+                </div>
+                
+                
+                <button class="lo" type="submit">Register</button>
+            </form>
+            <div class="or-text">
+                <p>Or sign Up with</p>
+            </div>
+            <div class="social-login">
+                <button type="button" class="instagram-button"><a href=""
+                    ><i class="ri-instagram-fill"></i
+                  ></a></button>
+                <button type="button" class="facebook-button"><a href=""
+                    ><i class="ri-facebook-box-fill"></i
+                  ></a></button>
+                <button type="button" class="instagram-button"><a href=""
+                    ><i class="ri-mail-fill"></i
+                  ></a></button>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

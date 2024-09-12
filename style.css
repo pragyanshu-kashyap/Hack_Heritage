@@ -7,108 +7,186 @@ html,body{
     width: 100%;
     height: 100%;
 }
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #1a4d1a;
-    color: #333;
+    padding: 0;    
 }
-.header {
-    height: 80px;
-    background-color: #48df73;
-    padding: 10px 0;
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-}
-.header img {
-    height: 60px;
-    width: 140px;
-}
-.nav {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.nav li {
-    margin: 0 15px;
-}
-.nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 400;
-}
-.nav a.active {
-    color: #8bc34a;
-    border-bottom: 2px solid #8bc34a;
-}
-.services {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-}
-.service {
-    background-color: #e0e0e0;
+    min-height: 100vh;
     padding: 20px;
-    text-align: center;
-    width: 30%;
-    border-radius: 5px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
 }
-.service img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+
+.left-side {
+    width: 50%;
+    background-image: #ffffff;
+    color: #000000;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 }
-.service h3 {
-    font-weight: 700;
-    margin: 20px 0 10px;
+.language{
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 44px;
+    margin-left: 200px;
 }
-.service p {
-    font-weight: 400;
-    margin: 0 0 20px;
-}
-.service button {
-    background-color: #4caf50;
+
+.language select {
+    background-color: #40c878;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.logo h1{
+    font-size: 50px;
+    font-weight: 900;
+    /*background: linear-gradient(to right,rgb(254, 254, 254),rgb(255, 255, 255));
+    color: transparent;
+    -webkit-background-clip: text; for stylin of the text Health HUB*/
+    color: #ffffff;
+}
+
+.logo {
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome-text h1 {
+    font-size: 2.6em;
+    /* font-style: oblique; */
+    margin-bottom: 10px;
+    background: linear-gradient(to right,rgb(255, 226, 226),rgb(251, 251, 251));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.welcome-text p {
+    font-size: 1.6em;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right,rgb(165, 122, 122),rgb(251, 251, 251));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.website-address {
+    text-align: center;
+    margin-top: 40px;
+    font-size: medium;
+    font-weight: 700;
+    background: linear-gradient(to right,rgb(97, 161, 95),rgb(251, 251, 251));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.right-side {
+    margin-top: 10px;
+    height: 650px;
+    width: 40%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-side h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 700;
 }
-.footer {
-    background-color: #1a4d1a;
-    color: #fff;
-    padding: 20px 0;
+.lo{
+    color: #2af598;
+}
+.social-login i {
+    font-size: 1.5rem;
+    color: #4fef77;
+}
+
+.or-text {
     text-align: center;
+    margin-top: 20px;
 }
-.footer img {
-    height: 50px;
-    width: 120px;
+
+.social-login {
+    display: flex;
+    margin-top: 20px;
+    
 }
-.footer .nav {
-    justify-content: center;
-    margin: 20px 0;
+
+.social-login button {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 4px;
+    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.footer .nav li {
-    margin: 0 10px;
-}
-.footer .nav a {
+
+.instagram-button {
+    background-color: #000000;
     color: #fff;
-    font-weight: 400;
 }
-.footer .social {
-    margin: 20px 0;
-}
-.footer .social a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 20px;
-}
-.footer p {
-    margin: 10px 0 0;
-    font-size: 14px;
+
+.facebook-button {
+    background-color: #000000;
+    color: #ffffff;
 }
